@@ -1,0 +1,48 @@
+{
+  "Quotations": [
+    {
+      "id": 1,
+      "Title": "Power Link Quot",
+      "Description": "Quot to submit CCTV",
+      "Amount": 100000
+    },
+    {
+      "id": 2,
+      "Title": "Flipkart Quot",
+      "Description": "Quot to submit Flipkart CCTV",
+      "Amount": 200000
+    },
+    {
+      "id": 3,
+      "Title": "Amazon Quot",
+      "Description": "Quot to submit Amazon CCTV",
+      "Amount": 150000
+    }
+  ],
+  "Customers": [
+    {
+      "id": 1,
+      "Name": "Customer 1",
+      "Address": "#22, Whitefield",
+      "City": "Bangalore",
+      "Email": "contact@powerlink.com",
+      "Phone": "+1 89578447"
+    },
+    {
+      "id": 1,
+      "Name": "Customer 1",
+      "Address": "#22, Whitefield",
+      "City": "Bangalore",
+      "Email": "contact@powerlink.com",
+      "Phone": "+1 89578447"
+    },
+    {
+      "id": 1,
+      "Name": "Customer 1",
+      "Address": "#22, Whitefield",
+      "City": "Bangalore",
+      "Email": "contact@powerlink.com",
+      "Phone": "+1 89578447"
+    }
+  ]
+}

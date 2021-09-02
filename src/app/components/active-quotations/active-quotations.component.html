@@ -1,0 +1,6 @@
+<div class="px-2">
+    <h1>Active quotations</h1>
+    <app-quotation  *ngFor="let quotItem of ivQuotations" 
+        [quotation]="quotItem" (onDeleteQuotation) = "deleteQuotation(quotItem)">
+    </app-quotation>
+</div>

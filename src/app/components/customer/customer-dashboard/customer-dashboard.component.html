@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="page-container">
+        <div class="page-header">
+            Customers
+        </div>
+        <div class="page-body">
+            <div class="me-2 col d-flex flex-row-reverse">
+                <button type="button" class="btn btn-primary btn-sm" (click)="onAddClick()">
+                    <i class="fas fa-plus" aria-hidden="true"></i> Add
+                </button>
+            </div>
+            <app-customer-add *ngIf="isShowCustomerAdd"></app-customer-add>
+            <app-customer-detail *ngIf="!isShowCustomerAdd"></app-customer-detail>
+        </div>
+    </div>
+</div>
