@@ -11,38 +11,77 @@
       "Title": "Flipkart Quot",
       "Description": "Quot to submit Flipkart CCTV",
       "Amount": 200000
-    },
-    {
-      "id": 3,
-      "Title": "Amazon Quot",
-      "Description": "Quot to submit Amazon CCTV",
-      "Amount": 150000
     }
   ],
   "Customers": [
     {
       "id": 1,
-      "Name": "Customer 1",
-      "Address": "#22, Whitefield",
+      "FirstName": "Arun",
+      "LastName": "K A",
+      "Address1": "#22, Whitefield",
+      "Address2": "#22, Whitefield",
       "City": "Bangalore",
+      "State": "Bangalore",
+      "Country": {
+        "id": 1,
+        "Name": "India"
+      },
+      "Pincode": "560027",
       "Email": "contact@powerlink.com",
       "Phone": "+1 89578447"
     },
     {
-      "id": 1,
-      "Name": "Customer 1",
-      "Address": "#22, Whitefield",
+      "id": 2,
+      "FirstName": "Aami",
+      "LastName": "Arun",
+      "Address1": "#22, Whitefield",
+      "Address2": "#22, Whitefield",
       "City": "Bangalore",
+      "State": "Bangalore",
+      "Country": {
+        "id": 1,
+        "Name": "India"
+      },
+      "Pincode": "560027",
       "Email": "contact@powerlink.com",
       "Phone": "+1 89578447"
     },
     {
-      "id": 1,
-      "Name": "Customer 1",
-      "Address": "#22, Whitefield",
+      "id": 3,
+      "FirstName": "Jamsheer",
+      "LastName": "Jamshi",
+      "Address1": "#22, Whitefield",
+      "Address2": "#22, Whitefield",
       "City": "Bangalore",
+      "State": "Bangalore",
+      "Country": {
+        "id": 2,
+        "Name": "UAE"
+      },
+      "Pincode": "560027",
       "Email": "contact@powerlink.com",
       "Phone": "+1 89578447"
+    },
+    {
+      "id": -1,
+      "FirstName": "PowerLink",
+      "LastName": "",
+      "Address1": "UAE",
+      "City": "UAE",
+      "Country": "[object Object]",
+      "Pincode": "679898",
+      "Email": "ex@powerlink.com",
+      "Phone": "7877998796"
+    }
+  ],
+  "Country": [
+    {
+      "id": 1,
+      "Name": "India"
+    },
+    {
+      "id": 2,
+      "Name": "UAE"
     }
   ]
 }

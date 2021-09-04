@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Output, Input, EventEmitter} from '@angular/core';
 import { CustomerService } from '../../../services/customer.service';
-import { ICustomer } from '../../../model/ICustomer';
+import { ICustomer } from '../../../model/Customer';
 
 @Component({
   selector: 'app-customer-detail',
@@ -8,14 +8,27 @@ import { ICustomer } from '../../../model/ICustomer';
   styleUrls: ['./customer-detail.component.css']
 })
 export class CustomerDetailComponent implements OnInit{
+  @Input() customer:ICustomer;
+  
+  @Output() deleteclick:EventEmitter<ICustomer> = new EventEmitter<ICustomer>();
+  @Output() editclick:EventEmitter<ICustomer> = new EventEmitter<ICustomer>();
+ 
   ivCustomers:ICustomer[] =[];
-    
-  constructor(private ivCustomerService:CustomerService) { }
+
+  constructor(private customerservice:CustomerService) { }
 
   ngOnInit(): void {
-    this.ivCustomerService.getCustomers().subscribe((customers)=>{
+    this.customerservice.getCustomers().subscribe((customers)=>{
       this.ivCustomers = customers;
     })
   }
 
+  onClickEdit(customer:ICustomer){
+    this.editclick.emit(customer);
+  }
+
+  onClickDelete(customer:ICustomer){
+      console.log(customer);
+      this.deleteclick.emit(customer);
+  }
 }

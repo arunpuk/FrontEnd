@@ -1,16 +1,16 @@
-<div class="container">
-    <div class="page-container">
-        <div class="page-header">
-            Customers
-        </div>
-        <div class="page-body">
-            <div class="me-2 col d-flex flex-row-reverse">
+<div class="page-container">
+    <div class="page-header col-lg-12 col-xxl-6">
+        Customers
+    </div>
+    <div class="page-body">
+        <div class="col-lg-12 col-xxl-6" *ngIf="!isShowCustomerAdd">
+            <div class="me-2 mb-2 col d-flex flex-row-reverse">
                 <button type="button" class="btn btn-primary btn-sm" (click)="onAddClick()">
                     <i class="fas fa-plus" aria-hidden="true"></i> Add
                 </button>
             </div>
-            <app-customer-add *ngIf="isShowCustomerAdd"></app-customer-add>
-            <app-customer-detail *ngIf="!isShowCustomerAdd"></app-customer-detail>
+            <app-customer-detail [customer]="ivCustomer" (deleteclick)="onDeleteClick($event)" (editclick)="onEditClick($event)"></app-customer-detail>
         </div>
+        <app-customer-add *ngIf="isShowCustomerAdd" [customer]="ivCustomer" (closeclick)="onCloseClick()" (saveclick)="onSaveClick($event)"></app-customer-add>
     </div>
 </div>
